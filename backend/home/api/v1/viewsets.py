@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import ASdsf,ASdsf,ASdsf
-from .serializers import ASdsfSerializer,ASdsfSerializer,ASdsfSerializer
+from home.models import ASdsf,Fjfjf,ASdsf,Fjfjf,ASdsf,Fjfjf
+from .serializers import ASdsfSerializer,FjfjfSerializer,ASdsfSerializer,FjfjfSerializer,ASdsfSerializer,FjfjfSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -37,3 +37,8 @@ class ASdsfViewSet(viewsets.ModelViewSet):
     serializer_class = ASdsfSerializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = ASdsf.objects.all()
+
+class FjfjfViewSet(viewsets.ModelViewSet):
+    serializer_class = FjfjfSerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Fjfjf.objects.all()

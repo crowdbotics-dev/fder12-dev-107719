@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import ASdsf,ASdsf
+from home.models import ASdsf,Fjfjf,ASdsf,Fjfjf
 from django.http import HttpRequest
 from django.utils.translation import ugettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -80,4 +80,10 @@ class ASdsfSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ASdsf
+        fields = "__all__"
+
+class FjfjfSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Fjfjf
         fields = "__all__"
