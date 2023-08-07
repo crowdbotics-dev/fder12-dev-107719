@@ -24,6 +24,24 @@ function api_v1_asdsf_partial_update(payload) {
 function api_v1_asdsf_destroy(payload) {
   return fderdevAPI.delete(`/api/v1/asdsf/${payload.id}/`)
 }
+function api_v1_fjfjf_list(payload) {
+  return fderdevAPI.get(`/api/v1/fjfjf/`)
+}
+function api_v1_fjfjf_create(payload) {
+  return fderdevAPI.post(`/api/v1/fjfjf/`, payload)
+}
+function api_v1_fjfjf_retrieve(payload) {
+  return fderdevAPI.get(`/api/v1/fjfjf/${payload.id}/`)
+}
+function api_v1_fjfjf_update(payload) {
+  return fderdevAPI.put(`/api/v1/fjfjf/${payload.id}/`, payload)
+}
+function api_v1_fjfjf_partial_update(payload) {
+  return fderdevAPI.patch(`/api/v1/fjfjf/${payload.id}/`, payload)
+}
+function api_v1_fjfjf_destroy(payload) {
+  return fderdevAPI.delete(`/api/v1/fjfjf/${payload.id}/`)
+}
 function api_v1_login_create(payload) {
   return fderdevAPI.post(`/api/v1/login/`, payload)
 }
@@ -71,6 +89,12 @@ export const apiService = {
   api_v1_asdsf_update,
   api_v1_asdsf_partial_update,
   api_v1_asdsf_destroy,
+  api_v1_fjfjf_list,
+  api_v1_fjfjf_create,
+  api_v1_fjfjf_retrieve,
+  api_v1_fjfjf_update,
+  api_v1_fjfjf_partial_update,
+  api_v1_fjfjf_destroy,
   api_v1_login_create,
   api_v1_signup_create,
   rest_auth_login_create,
